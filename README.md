@@ -8,7 +8,7 @@ I could have made a single PowerShell script for generating as well as applying 
 
 ## II) Explainer into the repo structure
 1. The `Wallpapers` directory for holding the wallpapers on which the script will work upon. You can add/remove wallpapers here.
-2. `Cycle.sh` generates the new wallpaper to be displayed and stores the result in `curr_wallpaper.txt`.  
+2. `Cycle.sh` generates the new wallpaper to be displayed and stores the result in `curr_wallpaper.txt`. As a failsafe, the wallpaper is also displayed in a separate window for applying the wallpaper manually in case the powershell script fails to apply the wallpaper (observed to be erratic....working on a fix)  
 3. `curr_wallpaper.txt` holds the name (and relative preprocessed path) for the current wallpaper.
 4. `change_wallpaper.ps1` for reading the wallpaper to be displayed and finally applying the wallpaper.
 
