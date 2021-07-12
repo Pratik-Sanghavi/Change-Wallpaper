@@ -1,7 +1,7 @@
 # Change-Wallpaper
 ## I) Requirements
 The scripts in this repo can be leveraged to changed wallpaper daily on a Windows 10 machine. To run the scripts, it is assumed that the user has the following installed:
-1. Windows Terminal with WSL enabled
+1. WSL enabled on Windows Link [here](https://www.windowscentral.com/install-windows-subsystem-linux-windows-10).
 2. sudo apt-get install -y xdg-utils on Windows Terminal
 
 I could have made a single PowerShell script for generating as well as applying the wallpaper but I don't have sufficient experience in PowerShell (The limited script I've written currently is a result of googling and putting together code by observing the outputs!😅)
