@@ -6,7 +6,7 @@ set_wallpaper(){
     for file in ./Wallpapers/*.jpg
     do
         wallpapers=(${wallpapers[@]} "$file")
-        if [[ "$curr_wallpaper" == "$file" ]]
+        if [[ "${curr_wallpaper:12:${#curr_wallpaper}}" == "${file:13:${#file}}" ]]
         then
             index=$i
         fi
@@ -23,12 +23,12 @@ set_wallpaper(){
     then
         rand=$(random_generator)
         preprocess=${wallpapers[$rand]}
-        echo $preprocess|tr '/' '\'|cut -c 2-${#preprocess}>curr_wallpaper.txt
+        echo $preprocess|tr '/' '\\'|cut -c 2-${#preprocess}>curr_wallpaper.txt
         # Built as a failsafe in case wallpaper does not change
         $(xdg-open ${wallpapers[$rand]})
     else
         preprocess=${wallpapers[$index]}
-        echo $preprocess|tr '/' '\'|cut -c 2-${#preprocess}>curr_wallpaper.txt
+        echo $preprocess|tr '/' '\\'|cut -c 2-${#preprocess}>curr_wallpaper.txt
         # Built as a failsafe in case wallpaper does not change
         $(xdg-open ${wallpapers[$index]})
     fi
