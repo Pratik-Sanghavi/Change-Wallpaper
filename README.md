@@ -22,4 +22,4 @@ Begin the Task: On a schedule
 Recur daily and set the time when you wish to trigger the task
 Action: Start a program
 Program/Script: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe (this can vary across systems. try locating your powershell.exe (`find . -name powershell.exe` in Windows Terminal))
-Add arguments(optional): -executionpolicy unrestricted -command C:\Users\sangh\Desktop\Projects\Cycle_Wallpaper\sample.ps1 (or wherever your directory resides; add `-NoExit` before `-executionpolicy` in case the powershell terminates without any change!)
+Add arguments(optional): -executionpolicy unrestricted -command C:\Users\sangh\Desktop\Projects\Cycle_Wallpaper\change_wallpaper.ps1 (or wherever your directory resides; add `-NoExit` before `-executionpolicy` in case the powershell terminates without any change!)
