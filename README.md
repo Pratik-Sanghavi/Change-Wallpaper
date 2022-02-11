@@ -13,13 +13,13 @@ I could have made a single PowerShell script for generating as well as applying 
 4. `change_wallpaper.ps1` for reading the wallpaper to be displayed and finally applying the wallpaper.
 
 ## III) Task Scheduler for triggering scripts daily
-Task scheduler can be used to create a task for triggering the script (powershell obviously!) daily. The powershell calls and runs the bash script for generating a suitable wallpaper for the day and then applies the wallpaper.
-To create a task, press Win+S -> Task Scheduler
-Here create a new folder (say MyTasks) and Create a Basic Task. Populate the fields as follows:-
-Name: Change Wallpaper
-Description: Script to change wallpaper script daily
-Begin the Task: On a schedule
-Recur daily and set the time when you wish to trigger the task
-Action: Start a program
-Program/Script: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe (this can vary across systems. try locating your powershell.exe (`find . -name powershell.exe` in Windows Terminal))
-Add arguments(optional): -executionpolicy unrestricted -command C:\Users\sangh\Desktop\Projects\Cycle_Wallpaper\change_wallpaper.ps1 (or wherever your directory resides; add `-NoExit` before `-executionpolicy` in case the powershell terminates without any change!)
+Task scheduler can be used to create a task for triggering the script (powershell obviously!) daily. The powershell calls and runs the bash script for generating a suitable wallpaper for the day and then applies the wallpaper.<br>
+To create a task, press Win+S -> Task Scheduler<br>
+Here create a new folder (say MyTasks) and Create a Basic Task. Populate the fields as follows:-<br>
+Name: Change Wallpaper<br>
+Description: Script to change wallpaper script daily<br>
+Begin the Task: On a schedule<br>
+Recur daily and set the time when you wish to trigger the task<br>
+Action: Start a program<br>
+Program/Script: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe (this can vary across systems. try locating your powershell.exe (`find . -name powershell.exe` in Windows Terminal))<br>
+Add arguments(optional): -executionpolicy unrestricted -command C:\Users\sangh\Desktop\Projects\Cycle_Wallpaper\change_wallpaper.ps1 (or wherever your directory resides; add `-NoExit` before `-executionpolicy` in case the powershell terminates without any change!)<br>
