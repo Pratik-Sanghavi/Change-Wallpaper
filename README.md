@@ -17,7 +17,7 @@ Task scheduler can be used to create a task for triggering the script (powershel
 To create a task, press Win+S -> Task Scheduler<br>
 Here create a new folder (say MyTasks) and Create a Basic Task. Populate the fields as follows:-<br>
 Name: Change Wallpaper<br>
-Description: Script to change wallpaper script daily<br>
+Description: Script to change wallpaper daily<br>
 Begin the Task: On a schedule<br>
 Recur daily and set the time when you wish to trigger the task<br>
 Action: Start a program<br>
